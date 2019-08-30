@@ -5,7 +5,6 @@ body {
 
 p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.5rem;
 }
 
 h1 {
@@ -33,7 +32,6 @@ button {
 
 .header-main {
     max-width: 65rem;
-    background-color: rgb(203, 221, 233);
     margin: auto;
     display: grid;
     grid: 1fr 1fr / 1fr 1fr;
@@ -152,7 +150,7 @@ section {
 
 .card-container {
     position: absolute;
-    top: -13rem;
+    top: -10rem;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -187,7 +185,7 @@ section {
 }
 
 .card p {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     padding: 1rem;
     margin: 0;
 }
@@ -283,14 +281,54 @@ footer{
 
  padding: 2rem 7rem 0 11rem;
 }
+
+
+
+
 .form{
     display: grid;
     background-color: rgb(168, 161, 158);
     grid-template-columns: 1fr 1fr;
+
 }
 
 .form h1{
     text-align: center;
     color:white;
     margin-top: 9rem;
+}
+
+textarea {
+    padding: 1rem;
+}
+
+.form p {
+    color: lightgray;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form button {
+    margin: 2rem 10rem 0 0;
+    align-self: flex-end;
+}
+
+input {
+    width: 20.5rem;
+    padding: 0.5rem;
+}
+
+.map img {
+    width: 65rem;
+}
+
+.map {
+    height: 26rem;
 }
