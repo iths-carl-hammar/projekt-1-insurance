@@ -213,9 +213,6 @@ section {
 .grid-container{
     display: grid;
     grid: 1fr 1fr / 1fr 1fr 1fr;
-    /* grid-template-areas:
-    "blue white grey"
-    "white red white"  */
 }
 
 .grid-container > div:nth-of-type(2n) {
@@ -228,4 +225,46 @@ background-color: white;
 
 .grid-container > div:nth-of-type(5){
     background-color: rgb(227, 127, 84);
+}
+
+.grid-container h2 {
+    color: rgba(141, 141, 141, 1.5);
+    font-size: 2.5rem;
+    align-self: flex-start;
+    position: absolute;
+    left: 2rem;
+}
+
+.grid-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.grid-container p {
+    width: 100%;
+    text-align: center;
+}
+
+.bottom-button {
+    width: 65rem;
+    background-color:rgb(168, 161, 158);
+    height: 4rem;
+    text-align: center;
+    margin: auto;
+}
+
+.bottom-button p {
+    margin: 0;
+    line-height: 0;
+}
+
+footer{
+    background-color: rgb(119, 117,116);
+    width: 65rem;
+    height: 30rem;
+    margin: auto;
+
+
 }
