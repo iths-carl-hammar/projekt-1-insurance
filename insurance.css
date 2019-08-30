@@ -31,7 +31,7 @@ button {
 
 
 
-header {
+.header-main {
     max-width: 65rem;
     background-color: rgb(203, 221, 233);
     margin: auto;
@@ -71,7 +71,7 @@ header {
     padding: 6rem;
 }
 
-header img {
+.header-main img {
     width: 20rem;
     position: absolute;
     bottom: 0;
@@ -266,5 +266,31 @@ footer{
     height: 30rem;
     margin: auto;
 
+}
 
+
+.header-contact{
+    max-width: 65rem;
+    background-color: rgb(203, 221, 233);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.header-contact img {
+ width: 6rem;
+
+ padding: 2rem 7rem 0 11rem;
+}
+.form{
+    display: grid;
+    background-color: rgb(168, 161, 158);
+    grid-template-columns: 1fr 1fr;
+}
+
+.form h1{
+    text-align: center;
+    color:white;
+    margin-top: 9rem;
 }
