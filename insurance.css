@@ -3,9 +3,36 @@ body {
     background-color: rgb(235, 235, 235);
 }
 
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.5rem;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    line-height: 1;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+}
+
+button {
+    border-radius: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    padding: 0.5rem 2rem;
+}
+
+
+
 header {
-    max-width: 1000px;
-    height: 600px;
+    max-width: 65rem;
     background-color: rgb(203, 221, 233);
     margin: auto;
     display: grid;
@@ -51,33 +78,10 @@ header img {
     right: 0;
 }
 
-p {
-    font-family: 'Open Sans', sans-serif;
-}
 
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    margin: 10px 0;
-}
-
-h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    color: white;
-    margin: 0;
-}
-
-button {
-    border-radius: 2rem;
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    padding: 0.5rem 2rem;
-}
 
 nav {
-    width: 1000px;
-    height: 4rem;
+    width: 65rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -88,26 +92,63 @@ nav a {
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     color: rgb(168, 161, 158);
+    padding: 1.5rem 0;
 }
 
 .home-nav {
     color: black;
 }
 
+
+
 section {
-    max-width: 1000px;
-    height: 600px;
+    max-width: 65rem;
+    height: 40rem;
     margin: auto;
 }
 
 .info {
     background-color: rgb(168, 161, 158);
+    display: grid;
+    grid: 1fr / 1fr 1fr;
 }
+
+.info div {
+    padding: 5rem;
+    color: white;
+}
+
+.info p {
+    padding: 5rem;
+}
+
+.info button {
+    margin-top: 3rem;
+}
+
+
 
 .about {
     background-color: rgb(241, 179, 78);
     position: relative;
+    text-align: center;
 }
+
+.about > p {
+    width: 50%;
+    margin: auto;
+    padding: 0.5rem;
+
+}
+
+.about > h1 {
+    margin: 0;
+    margin-bottom: 1rem;
+    padding-top: 13rem;
+    color: white;
+}
+
+
 
 .card-container {
     position: absolute;
@@ -119,7 +160,7 @@ section {
 
 .card {
     background-color: white;
-    width: 250px;
+    width: 14rem;
     text-align: center;
     position: relative;
     border-radius: 0.8rem;
@@ -127,9 +168,8 @@ section {
 }
 
 .card > div {
-    width: 225px;
-    height: 175px;
-    background-color: pink;
+    width: 13rem;
+    height: 10rem;
     overflow: hidden;
     position: relative;
     top: -1.5rem;
@@ -138,14 +178,54 @@ section {
 }
 
 .card img {
-    width: 8rem;
+    width: 7rem;
+    margin-top: 0.5rem;
+}
+
+.old-container img {
+    width: 9rem;
 }
 
 .card p {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     padding: 1rem;
+    margin: 0;
 }
 
 .card h4 {
     margin: 0;
+}
+
+.child-container {
+    background-color: rgb(203, 221, 233);
+}
+
+.woman-container {
+    background-color: rgb(241, 179, 78);
+}
+
+.old-container {
+    background-color: rgb(227, 127, 84);
+}
+
+
+
+.grid-container{
+    display: grid;
+    grid: 1fr 1fr / 1fr 1fr 1fr;
+    /* grid-template-areas:
+    "blue white grey"
+    "white red white"  */
+}
+
+.grid-container > div:nth-of-type(2n) {
+background-color: white;
+}
+
+.grid-container > div:first-child {
+    background-color: rgb(203, 221, 233);
+}
+
+.grid-container > div:nth-of-type(5){
+    background-color: rgb(227, 127, 84);
 }
