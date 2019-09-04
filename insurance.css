@@ -260,7 +260,7 @@ background-color: white;
 }
 
 .bottom-button {
-    width: 65rem;
+    max-width: 65rem;
     background-color:rgb(168, 161, 158);
     height: 4rem;
     text-align: center;
