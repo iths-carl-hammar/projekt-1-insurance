@@ -31,6 +31,10 @@ button {
     background-color: white;
     border: none;
     box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+    transition: all .2 ease-in-out;
+}
+button:hover{
+    transform: scale(1.1);
 }
 
 
